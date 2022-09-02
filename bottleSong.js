@@ -3,7 +3,7 @@ const generateSingleStanza = number => {
     //переменная и его спряжения для первой строки
     let bottle = 'бутылок'    //значение по умолчанию
 
-    if (number % 10 === 1){   //если количество равно 1
+    if (number === 1){   //если количество равно 1
         bottle = 'бутылка' }  //пишется "бутылка"
     else if (number % 10 >= 2 && number % 10 <= 4){  //если количество равно от 2 до 4
         bottle = 'бутылки'}                          //пишется "бутылки"
@@ -27,4 +27,4 @@ const generateSongText = number => {
     }
 }
 
-generateSongText(4)
+generateSongText(11)
